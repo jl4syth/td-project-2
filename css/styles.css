@@ -1,15 +1,14 @@
 /* ================================= 
   Basic Styles - Mobile
 ==================================== */
-
 * {
     box-sizing: border-box;
 }
 
 body {
+    margin: 0;
     background-color: #fafafa;
 }
-
 
 header,
 nav, {
@@ -17,10 +16,15 @@ nav, {
     flex-direction: column;
 }
 
+header {
+    
+}
+
 main {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     margin: 0;
-    background-color: #fff;
 }
 h1 {
      text-align: center;
@@ -32,6 +36,10 @@ li {
     width: 90%;
     text-align: center;
     padding: 10px;
+}
+
+img {
+    border: none;
 }
 
 /* ================================= 
@@ -58,7 +66,11 @@ li {
     align-items: center;
 }
 
+.portfolio {
+    background-color: #fff;
+}
 .project {
     text-align: center;
     width: 90%;
+    flex-grow: 1;
 }
