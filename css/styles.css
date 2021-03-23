@@ -16,7 +16,7 @@ body {
 }
 
 header,
-nav, {
+nav {
     display: flex;
     flex-direction: column;
 }
@@ -140,7 +140,13 @@ footer {
     background-color: #fafafa;
     text-align: center;
     padding: 1rem 0 3rem 0;
+}
 
+.contact h3 {
+    font-size: .95rem;
+    color: lightgray;
+    width: 90%;
+    padding-bottom: 1rem;
 }
 
 .border {
@@ -171,11 +177,15 @@ footer a {
 }
 
 /* ================================= 
-  Basic Styles - Tablet (768px)
+  Tablet (768px)
 ==================================== */
 
 @media (min-width: 767px) {
-
+ 
+/*---------------Header Styles---------------*/
+    header {
+        padding-top: 1rem;
+    }
 
     h1 {
         font-size: 2rem;
@@ -191,7 +201,7 @@ footer a {
 
     nav ul {
         display: flex;
-        width: 50%;
+        width: 40%;
         margin: auto;
     }
 
@@ -220,6 +230,10 @@ footer a {
         margin: 0;
     }
 
+/*---------------Main Styles----------------*/
+
+/*-----Portfolio Styles-----*/
+
     .portfolio {
         display: flex;
         flex-direction: row;
@@ -232,7 +246,6 @@ footer a {
         width: 100%;
         text-align: center;
         margin: 0;
-        padding-bottom: 1rem;
     }
 
     .portfolio h5 {
@@ -243,7 +256,7 @@ footer a {
     .project {
         flex-basis: 50%;
         margin: 0;
-        padding: 0;
+        padding-top: 1rem;
     }
 
     .project img {
@@ -258,10 +271,21 @@ footer a {
         width: 79%;
     }
 
+    /*-----Contact Styles-----*/
+
+    .contact h3 {
+        font-size: 1.20rem;
+        color: gray;
+        width: 70%;
+        padding-bottom: 2rem;
+    }
+
     .contact p {
         font-size: 1.25rem;
         width: 80%;
     }
+
+    /*-------------Footer Styles-------------*/
 
     .footer {
         width: 95%;
@@ -287,8 +311,65 @@ footer a {
         padding-left: 20px;
         background-color: #fafafa;
     }
+}
 
+/* ================================= 
+   Desktop (1024)
+==================================== */
 
+@media (min-width: 1000px) {
 
+    header,
+    nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
+    header {
+        margin: auto;
+        width: 100%;
+    }
+
+    .heading {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+    }
+
+    header h1 {
+        width: 50%;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav {
+        width: 38%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .project {
+        flex-basis: 33.3%;
+    }
+
+    .project p {
+        font-size: .85rem;
+        width: 85%;
+
+    }
+
+    .contact h3 {
+        font-size: 1.15rem;
+        width: 50%;
+    }
+
+    .contact p {
+        font-size: 1.15rem;
+    }
+
+    .footer {
+        padding-bottom: 1rem;
+    }
 }
