@@ -43,7 +43,8 @@ h1 {
      font-weight: 500;
      font-size: 1.1rem;
      padding: 0;
-     margin-top: 15px;
+     margin: 0;
+
  }
 
  h5 {
@@ -57,9 +58,9 @@ h1 {
     font-weight: 300;
     font-size: .90rem;
     width: 90%;
-    padding-bottom: 1rem;
-    margin: 10px 0;
     color: gray;
+    padding: .75rem 0;
+    margin: 0;
  }
 
 li {
@@ -81,23 +82,27 @@ a {
 img {
     width: 100%;
     border: none;
+    margin: 1rem auto;
 }
 
 footer {
-    margin: 0;
-    padding: 0;
     width: 100%;
     background-color: #fafafa;
+    margin: 0;
+    padding: 0;
 }
+
 /* ================================= 
   Header Styles - Mobile
 ==================================== */
+
 .intro {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin: auto;
+    padding-bottom: 2rem;
 }
 
 .intro img {
@@ -116,6 +121,7 @@ footer {
 
 .portfolio {
     background-color: #fff;
+    padding-bottom: 3rem;
 }
 .project {
     text-align: center;
@@ -133,19 +139,14 @@ footer {
     align-items: center;
     background-color: #fafafa;
     text-align: center;
-    padding-top: 1rem;
-}
-#no-ex-space {
-    padding-bottom: 0;
-}
+    padding: 1rem 0 3rem 0;
 
-#ex-space {
-    padding-bottom: 3rem;
 }
 
 .border {
     border-top: 1px solid lightgray;
     width: 90%;
+    margin: auto;
 }
 
 /* ================================= 
@@ -157,8 +158,12 @@ footer {
     justify-content: space-between;
     align-items: center;
     width: 95%;
-    padding: 0 10px;
-    margin: .75rem auto;
+    margin: auto;
+    padding: .25rem 0 1rem 0;
+}
+
+footer a {
+    font-size: .75rem;
 }
 
 .bot-tab-link {
@@ -171,12 +176,17 @@ footer {
 
 @media (min-width: 767px) {
 
+
     h1 {
         font-size: 2rem;
     }
     
     #contact {
         display: none;
+    }
+
+    nav {
+        padding-bottom: .75rem;
     }
 
     nav ul {
@@ -194,35 +204,50 @@ footer {
         justify-content: space-between;
         align-items: flex-start;
         width: 90%;
-        margin: 2rem auto;
+        margin: 1rem auto;
     }
 
     .intro img {
         order: 2;
         width: 45%;
+        margin: 0;
     }
 
     .intro p {
         font-size: 1rem;
         text-align: left;
         width: 55%;
-
+        margin: 0;
     }
 
     .portfolio {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 3rem 1rem;
+        margin: 0;
+    }
 
+    .headline {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding-bottom: 1rem;
     }
 
     .portfolio h5 {
-        width: 100%;
+        padding: 0;
+        margin: 0;
     }
 
     .project {
-        flex-direction: row;
-        justify-content: center;
-        flex-flow: wrap;
-        flex-basis: 40%;
-        margin: auto .4em;
+        flex-basis: 50%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .project img {
+        width: 100%;
     }
 
     .project h3 {
@@ -230,12 +255,18 @@ footer {
     }
 
     .project p {
-        width: 75%;
+        width: 79%;
+    }
+
+    .contact p {
+        font-size: 1.25rem;
+        width: 80%;
     }
 
     .footer {
         width: 95%;
         margin: auto;
+        padding-bottom: 4rem;
     }
 
     .bot-mob-link {
@@ -249,12 +280,12 @@ footer {
     footer ul {
         display: flex;
         justify-content: space-between;
-
     }
 
     footer li {
         margin: 0;
-        padding: 0;
+        padding-left: 20px;
+        background-color: #fafafa;
     }
 
 
