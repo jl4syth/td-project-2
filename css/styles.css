@@ -21,9 +21,6 @@ nav, {
     flex-direction: column;
 }
 
-header {
-    
-}
 
 main {
     display: flex;
@@ -31,6 +28,7 @@ main {
     width: 100%;
     margin: 0;
 }
+
 h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -61,15 +59,16 @@ h1 {
     width: 90%;
     padding-bottom: 1rem;
     margin: 10px 0;
+    color: gray;
  }
 
 li {
     background-color: #fff;
     margin: 5px auto;
-    width: 90%;
     text-align: center;
     padding: 10px;
     font-size: .90rem;
+    width: 90%;
 }
 
 a {
@@ -90,11 +89,9 @@ footer {
     width: 100%;
     background-color: #fafafa;
 }
-
 /* ================================= 
-  Class Styles - Mobile
+  Header Styles - Mobile
 ==================================== */
-
 .intro {
     display: flex;
     flex-direction: column;
@@ -106,6 +103,9 @@ footer {
 .intro img {
     width: 70%;
 }
+/* ================================= 
+  Portfolio/Main Styles - Mobile
+==================================== */
 
 .portfolio,
 .project {
@@ -122,6 +122,10 @@ footer {
     width: 100%;
     flex-grow: 1;
 }
+
+/* ================================= 
+  Contact Section Styles - Mobile
+==================================== */
 
 .contact {
     display: flex;
@@ -142,8 +146,12 @@ footer {
 .border {
     border-top: 1px solid lightgray;
     width: 90%;
-    flex-grow: 5;
 }
+
+/* ================================= 
+  Footer Styles - Mobile
+==================================== */
+
 .footer {
     display: flex;
     justify-content: space-between;
@@ -151,4 +159,105 @@ footer {
     width: 95%;
     padding: 0 10px;
     margin: .75rem auto;
+}
+
+.bot-tab-link {
+    display: none;
+}
+
+/* ================================= 
+  Basic Styles - Tablet (768px)
+==================================== */
+
+@media (min-width: 767px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+    
+    #contact {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        width: 50%;
+        margin: auto;
+    }
+
+    nav li {
+        background-color: #fafafa; 
+    }
+
+    .intro {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    .intro img {
+        order: 2;
+        width: 45%;
+    }
+
+    .intro p {
+        font-size: 1rem;
+        text-align: left;
+        width: 55%;
+
+    }
+
+    .portfolio {
+
+    }
+
+    .portfolio h5 {
+        width: 100%;
+    }
+
+    .project {
+        flex-direction: row;
+        justify-content: center;
+        flex-flow: wrap;
+        flex-basis: 40%;
+        margin: auto .4em;
+    }
+
+    .project h3 {
+        width: 100%;
+    }
+
+    .project p {
+        width: 75%;
+    }
+
+    .footer {
+        width: 95%;
+        margin: auto;
+    }
+
+    .bot-mob-link {
+        display: none;
+    }
+
+    .bot-tab-link {
+        display: flex;
+    }
+
+    footer ul {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    footer li {
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+
 }
