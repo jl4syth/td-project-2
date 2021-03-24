@@ -1,0 +1,414 @@
+/* ================================= 
+  Basic Styles - Mobile
+==================================== */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    color: #373737;
+    margin: 0;
+    background-color: #6305ad;
+}
+
+header,
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    padding-top: 10px;
+ }
+
+h3 {
+     font-family: 'Raleway', sans-serif;
+     font-weight: 500;
+     font-size: 1.1rem;
+     padding: 0;
+     margin: 0;
+
+ }
+
+h5 {
+     font-family: 'Montserrat', sans-serif;
+     text-transform: uppercase;
+     padding-top: 20px;
+ }
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: .85rem;
+    width: 94%;
+    color: gray;
+    padding: .75rem 0;
+    margin: 0;
+ }
+
+li {
+    background-color: #fff;
+    margin: 5px auto;
+    text-align: center;
+    padding: 10px;
+    font-size: .90rem;
+    width: 90%;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #6305ad;
+    text-transform: uppercase;
+}
+
+img {
+    width: 100%;
+    border: none;
+    margin: 1rem auto;
+}
+
+footer {
+    width: 100%;
+    background-color: #6305ad;
+    margin: 0;
+    padding: 0;
+}
+
+/* ================================= 
+  Header Styles - Mobile
+==================================== */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 2rem;
+}
+
+.intro img {
+    width: 50%;
+}
+
+.intro p {
+    color: #fff;
+}
+
+
+/* ================================= 
+  Portfolio/Skills Main Styles - Mobile
+==================================== */
+
+.portfolio,
+.project,
+.skill {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio,
+.skill {
+    background-color: #fff;
+    padding-bottom: 3rem;
+    margin: 0;
+}
+
+.project,
+.skills {
+    text-align: center;
+    width: 90%;
+}
+
+.project img {
+    padding-bottom: 1rem;
+}
+
+.skill {
+    padding-top: 3rem;
+}
+
+.skills {
+    padding-bottom: 2rem;
+}
+
+.skills i {
+    font-size: 5rem;
+    color: #6305ad;
+    padding-bottom: 1rem;;
+}
+
+.skills p {
+    margin: auto;
+}
+
+/* ================================= 
+  Contact Section Styles - Mobile
+==================================== */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #6305ad;
+    text-align: center;
+    padding: 1rem 0 3rem 0;
+}
+
+.contact h3 {
+    font-size: .95rem;
+    color: #fff;
+    width: 90%;
+    padding-bottom: 1rem;
+}
+
+.contact h5 {
+    color: #fff;
+}
+
+.border {
+    border-top: 1px solid white;
+    width: 90%;
+    margin: auto;
+}
+
+/* ================================= 
+  Footer Styles - Mobile
+==================================== */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: .25rem 0 1rem 0;
+}
+
+.footer p {
+    color: #fff;
+}
+
+footer a {
+    font-size: .75rem;
+    color: #fff;
+}
+
+.bot-tab-link {
+    display: none;
+}
+
+/* ================================= 
+  Tablet (768px)
+==================================== */
+
+@media (min-width: 767px) {
+ 
+/*---------------Header Styles---------------*/
+    header {
+        padding-top: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    nav {
+        padding-bottom: .75rem;
+    }
+
+    nav ul {
+        display: flex;
+        width: 40%;
+        margin: auto;
+    }
+
+    .intro {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .intro img {
+        order: 2;
+        width: 45%;
+        margin: 0;
+    }
+
+    .intro p {
+        font-size: 1rem;
+        text-align: left;
+        width: 55%;
+        margin: 0;
+    }
+
+/*---------------Main Styles----------------*/
+
+/*-----Portfolio Styles-----*/
+
+    .portfolio {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 3rem 1rem;
+        margin: 0;
+    }
+
+    .headline {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .portfolio h5 {
+        padding: 0;
+        margin: 0;
+    }
+
+    .project {
+        flex-basis: 50%;
+        margin: 0;
+        padding-top: 1rem;
+    }
+
+    .project img {
+        width: 100%;
+    }
+
+    .project h3 {
+        width: 100%;
+    }
+
+    .project p {
+        width: 79%;
+    }
+
+    /*-----Contact Styles-----*/
+
+    .contact h3 {
+        font-size: 1.20rem;
+        color: gray;
+        width: 70%;
+        padding-bottom: 2rem;
+    }
+
+    .contact p {
+        font-size: 1.25rem;
+        width: 80%;
+    }
+
+/*-------------Footer Styles-------------*/
+
+    .footer {
+        width: 90%;
+        margin: auto;
+        padding-bottom: 4rem;
+    }
+
+    .bot-mob-link {
+        display: none;
+    }
+
+    .bot-tab-link {
+        display: flex;
+    }
+
+    footer ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer li {
+        margin: 0;
+        padding-left: 20px;
+    }
+}
+
+/* ================================= 
+   Desktop (1024)
+==================================== */
+
+@media (min-width: 1000px) {
+
+/*---------------Header Styles---------------*/
+    header,
+    nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    header {
+        margin: auto;
+        width: 100%;
+    }
+
+    .heading {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+    }
+
+    header h1 {
+        width: 48%;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav {
+        width: 52%;
+        padding: 0;
+        margin: 0;
+    }
+
+/*---------------Main Styles----------------*/
+
+/*-----Portfolio Styles-----*/
+
+    .project {
+        flex-basis: 33.3%;
+    }
+
+    .project p {
+        font-size: .85rem;
+        width: 85%;
+    }
+
+/*-----Contact Styles-----*/
+
+    .contact h3 {
+        font-size: 1.15rem;
+        width: 50%;
+    }
+
+    .contact p {
+        font-size: 1.15rem;
+    }
+
+/*-------------Footer Styles-------------*/
+
+    .footer {
+        padding-bottom: 1rem;
+    }
+}
