@@ -46,6 +46,10 @@ h3 {
 
  }
 
+h4 {
+    color: #fff;
+}
+
 h5 {
      font-family: 'Montserrat', sans-serif;
      text-transform: uppercase;
@@ -112,7 +116,6 @@ footer {
     color: #fff;
 }
 
-
 /* ================================= 
   Portfolio/Skills Main Styles - Mobile
 ==================================== */
@@ -153,7 +156,7 @@ footer {
 .skills i {
     font-size: 5rem;
     color: #6305ad;
-    padding-bottom: 1rem;;
+    padding-bottom: 1rem;
 }
 
 .skills p {
@@ -184,6 +187,7 @@ footer {
     color: #fff;
 }
 
+
 .border {
     border-top: 1px solid white;
     width: 90%;
@@ -201,10 +205,6 @@ footer {
     width: 90%;
     margin: auto;
     padding: .25rem 0 1rem 0;
-}
-
-.footer p {
-    color: #fff;
 }
 
 footer a {
