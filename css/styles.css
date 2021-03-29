@@ -113,8 +113,9 @@ header h1 {
 }
 
 .intro img {
-    width: 70%;
-    margin-top: 1rem;
+    margin: auto;
+    padding: 1.5rem 0 1rem 0;
+    width: 60%;
 }
 
 .intro p {
@@ -251,7 +252,6 @@ footer a {
     .heading {
         display: flex;
         flex-direction: column;
-        padding-bottom: 1.5rem;
     }
 
     h1 {
@@ -263,7 +263,7 @@ footer a {
     nav ul {
         display: flex;
         width: 50%;
-        margin: auto;
+        margin: 1rem auto;
     }
 
     nav li {
@@ -279,13 +279,14 @@ footer a {
         justify-content: space-between;
         align-items: flex-start;
         width: 90%;
-        margin: 1rem auto;
+        margin: 2rem auto;
     }
 
     .intro img {
         order: 2;
         width: 45%;
         margin: 0;
+        padding: 0;
     }
 
     .intro p {
@@ -293,6 +294,7 @@ footer a {
         text-align: left;
         width: 55%;
         margin: 0;
+        padding: 0 .5rem 0 0;
     }
 
 /*---------------Main Styles----------------*/
@@ -305,12 +307,13 @@ footer a {
         flex-wrap: wrap;
         padding: 3rem 1rem;
         margin: 0;
+        border: 3px solid white;
     }
 
     .headline {
         width: 100%;
         text-align: center;
-        margin: 0;
+        margin-bottom: 1rem;
     }
 
     .portfolio h5 {
@@ -341,7 +344,7 @@ footer a {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 3rem 1rem;
+        padding: 0 0 3rem 0;
         margin: 0;
     }
 
@@ -353,11 +356,13 @@ footer a {
     .skills {
         flex-basis: 33.3%;
         margin: 0;
-        padding-top: 1rem;
     }
 
     /*-----Contact Styles-----*/
 
+    .contact {
+        margin-bottom: 1rem;
+    }
     .contact h3 {
         font-size: 1.20rem;
         color: #fff;
@@ -375,7 +380,7 @@ footer a {
     .footer {
         width: 90%;
         margin: auto;
-        padding-bottom: 4rem;
+        padding-bottom: 3rem;
     }
 
     .bot-mob-link {
@@ -427,12 +432,12 @@ footer a {
     header h1 {
         text-align: left;
         padding: 0;
-        margin: 0;
-        width: 61%;
+        margin: auto;
+        width: 63%;
     }
 
     nav {
-        width: 39%;
+        width: 37%;
         padding: 0;
         margin: 0;
     }
@@ -443,10 +448,7 @@ footer a {
 
     .intro p {
         font-size: 1.5rem;
-    }
-
-    .intro img {
-        margin-left: 3rem;
+        padding-right: 2rem;
     }
 
 /*---------------Main Styles----------------*/
@@ -459,7 +461,7 @@ footer a {
 
     .project p {
         font-size: .85rem;
-        width: 85%;
+        width: 78%;
     }
 
 /*-----Contact Styles-----*/
